@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ramen Tiger Diner</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+         <img src="assets/img/LogoRamen.png" alt=""> 
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="index.html#lokasi">Location</a></li>
+        </ul>
+      </nav>
+      <!-- .navbar -->
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+
+  <!-- ======= Book A Table Section ======= -->
+  <section id="book-a-table" class="book-a-table">
+    <div class="container" style="padding: 20px;" data-aos="fade-up">
+
+      <div class="section-header">
+        <!-- <p>Book <span>Your Table</span> With Us</p> -->
+        <p>Book Your Table With Us</p>
+      </div>
+
+      <div class="row g-0">
+
+        <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservasi-bg.jpeg);" data-aos="zoom-out" data-aos-delay="200"></div>
+
+        <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+          <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+            <div class="row gy-4">
+              <div class="col-lg-4 col-md-6">
+                <input type="text" name="name" class="form-control" id="nama" placeholder="Nama Anda" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                <div class="validate"></div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <input type="date" class="form-control" name="tgl" id="tanggal" placeholder="Tanggal"  required>
+                <div class="validate"></div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <input type="time" class="form-control" name="jam" id="jam" placeholder="Jam" required>
+                <div class="validate"></div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <select class="form-control" name="tamu" id="jmltamu" required>
+                  <option value="" selected hidden>Jumlah Tamu</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                </select>
+                <div class="validate"></div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <input type="number" class="form-control" name="wa" id="NoWA" placeholder="Nomor WhatsApp" required>
+                <div class="validate"></div>
+              </div>
+              <div class="form-group col-md-12">
+                <input type="text" class="form-control" id="note" readonly placeholder="Kami keep meja maksimal 20 menit"></input>
+                <div class="validate"></div>
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <div class="loading">Loading</div>
+              <div class="error-message">Reservasi Anda telah berhasil dikirim. Kami akan segera mengkonfirmasi reservasi Anda. Terima Kasih!</div>
+              <div class="sent-message">data anda telah berhasil dikirim</div>
+            </div>
+            <div class="text-center" style="margin-top: 40px;"><button type="submit">Kirim</button></div>
+          </form>
+        </div>
+        <!-- End Reservation Form -->
+
+      </div>
+
+    </div>
+  </section>
+  <!-- End Book A Table Section -->
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-bag-check icon"></i>
+          <div>
+            <h4>Available On</h4>
+            <p>
+              GrabFood 
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Contact</h4>
+            <p>
+              <strong>Phone:</strong> 088234567891<br>
+              <strong>Email:</strong> seinusa.id@gmail.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sun:</strong> 11AM - 21PM<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="https://www.instagram.com/tokomietiger?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Ramen Tiger Diner</span></strong>. All Rights Reserved
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
